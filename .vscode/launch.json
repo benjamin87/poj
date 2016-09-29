@@ -5,7 +5,6 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
@@ -15,28 +14,31 @@
                 "MIMode": "gdb"
             },
             "osx": {
-                "MIMode": "lldb"
+                "MIMode": "lldb",
+                "program": "${fileDirname}/a.out"
             },
             "windows": {
                 "MIMode": "gdb",
-                "miDebuggerPath":"I:/Program/cygwin64/bin/gdb.exe"
+                "miDebuggerPath":"I:/Program/cygwin64/bin/gdb.exe",
+                "program": "${fileDirname}/a.out"
             }
         },
         {
             "name": "C++ Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "${fileDirname}/a.exe",
             "processId": "${command.pickProcess}",
             "linux": {
                 "MIMode": "gdb"
             },
             "osx": {
-                "MIMode": "lldb"
+                "MIMode": "lldb",
+                "program": "${fileDirname}/a.out"
             },
             "windows": {
                 "MIMode": "gdb",
-                "miDebuggerPath":"I:/Program/cygwin64/bin/gdb.exe"
+                "miDebuggerPath":"I:/Program/cygwin64/bin/gdb.exe",
+                "program": "${fileDirname}/a.out"
             }
         }
     ]

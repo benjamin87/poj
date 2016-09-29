@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "command": "g++",
     "isShellCommand": true,
-    "args": ["-g", "${file}"],
     "showOutput": "always",
-    "echoCommand": true
+    "echoCommand": true,
+    "args": ["-g", "-o", "${fileDirname}/a.out", "${file}"]
 }
